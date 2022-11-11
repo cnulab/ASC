@@ -1,4 +1,4 @@
-This is an implementation of the paper ["Confidence-Calibrated Face and Kinship Verification"](https://arxiv.org/abs/2210.13905)  
+This is an official implementation of the paper ["Confidence-Calibrated Face and Kinship Verification"](https://arxiv.org/abs/2210.13905)  
   
   
 We first introduce a simple yet effective confidence measure for face and kinship verification, which allows the   
