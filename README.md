@@ -25,7 +25,7 @@ $ pip install -r requirements.txt
   
 You can download the FIW dataset and models via ["Baidu Cloud"](https://pan.baidu.com/s/10JhgwV5qa8dJoPo1GeJmMw?pwd=6789) (pwd 6789) or ["Google Drive"](https://drive.google.com/drive/folders/19c49HVjRuvReX6ZA8_7_dslm2KB0LKDj?usp=share_link).  
 Copy the model files to the `pretrain_models` and the FIW dataset to the `data`.  
-Unzip the FIW.zip, you can get the following directory structure. 
+Unzip the `FIW.zip`, you can get the following directory structure. 
 ```
     |--data                         
         |--FIW           
