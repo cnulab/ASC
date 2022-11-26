@@ -107,13 +107,10 @@ class ECELoss(nn.Module):
         """
         n_bins (int): number of confidence interval bins
         """
-
         super(ECELoss, self).__init__()
         bin_boundaries = torch.linspace(0.5, 1, n_bins + 1)
-
         self.bin_lowers = bin_boundaries[:-1]
         self.bin_uppers = bin_boundaries[1:]
-
 
     def forward(self, confs, accs):
         ece = torch.zeros(1, device=confs.device)
