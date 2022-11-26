@@ -103,25 +103,6 @@ class ArcMarginProduct(nn.Module):
 
 
 class ECELoss(nn.Module):
-    """
-    Calculates the Expected Calibration Error of a model.
-    (This isn't necessary for angular scaling, just a cool metric).
-
-    The input to this loss is the logits of a model, NOT the softmax scores.
-
-    This divides the confidence outputs into equally-sized interval bins.
-    In each bin, we compute the confidence gap:
-
-    bin_gap = | avg_confidence_in_bin - accuracy_in_bin |
-
-    We then return a weighted average of the gaps, based on the number
-    of samples in each bin
-
-    See: Naeini, Mahdi Pakdaman, Gregory F. Cooper, and Milos Hauskrecht.
-    "Obtaining Well Calibrated Probabilities Using Bayesian Binning." AAAI.
-    2015.
-    """
-
     def __init__(self, n_bins=20):
         """
         n_bins (int): number of confidence interval bins
