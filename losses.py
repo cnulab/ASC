@@ -105,7 +105,7 @@ class ArcMarginProduct(nn.Module):
 class ECELoss(nn.Module):
     """
     Calculates the Expected Calibration Error of a model.
-    (This isn't necessary for temperature scaling, just a cool metric).
+    (This isn't necessary for angular scaling, just a cool metric).
 
     The input to this loss is the logits of a model, NOT the softmax scores.
 
