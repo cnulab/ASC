@@ -160,8 +160,7 @@ class ModelWithCalibration(nn.Module):
         self.bias.data.copy_(self.best_bias)
 
 
-
-
+    
     @torch.no_grad()
     def test(self,args,test_loader):
         """
@@ -220,8 +219,15 @@ class ModelWithCalibration(nn.Module):
         args.logger.info("ECE after calibration: %.6f"% ece_after.item())
 
         draw_distance(confs_after,acc_after,os.path.join(args.save_dir,"after_calibration.jpg"))
-
-
+    
+    def save_params(self,path='wb.pkl'):
+        torch.save({"weights":self.weights,"bias":self.bias},path)
+    
+    def load_params(self,path='wb.pkl'):
+        wb=torch.load(path)
+        self.weights.data.copy_(wb['weights'])
+        self.bias.data.copy_(wb['bias'])
+      
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="train_encoder")
