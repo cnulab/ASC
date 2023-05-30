@@ -45,7 +45,7 @@ You can finetune a pre-trained ResNet101 network using ArcFace loss:
 ```
 $ python train_backbone.py --loss arcface --backbone resnet101  --optimizer adam  --batch_size 32  --s 10.0 --m 0.4 --image_size 112
 ```
-The checkpoints will be saved in the `arcface_resnet101`. More commands (other losses and models) in [run.sh](run.sh).  
+The checkpoint will be saved in the `arcface_resnet101`. More commands (other losses and models) in [run.sh](run.sh).  
  
 
 ## 🔑 Calibration
