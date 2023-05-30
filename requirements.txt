@@ -1,0 +1,5 @@
+torch==1.11.0+cu113
+sklearn==0.0.post5
+tqdm==4.61.2
+Pillow==9.1.1
+matplotlib==3.5.2
