@@ -1,6 +1,6 @@
 # Confidence-Calibrated Face and Kinship Verification
 
-**💡 This is the official implementation of the paper ["Confidence-Calibrated Face and Kinship Verification"](https://ieeexplore.ieee.org/document/10262094)** 
+**💡 This is the official implementation of the paper ["Confidence-Calibrated Face and Kinship Verification"](https://ieeexplore.ieee.org/document/10262094) [[arxiv]](https://arxiv.org/abs/2210.13905)** 
 
 **This work has been accepted by IEEE Transactions on Information Forensics and Security (TIFS).**   
 
